@@ -39,3 +39,13 @@ writeFileSync(
     game_path_max_bytes: 1000,
   }),
 );
+
+// --- Sizzle & Serve hand-in -------------------------------------------------
+// This is the entrypoint for Sizzle & Serve, an original street-kitchen rush
+// game: it stages game/ and the three screenshots beside it into the output
+// directory, then writes the dossier the judge reads from those copied files.
+// Everything it hands in is static, so the game itself makes no network call.
+
+// One line at the end of a build, so a run of this program says which game it
+// packaged and where the dossier landed; useful when a build is run by hand.
+console.log('Sizzle & Serve dossier written to ' + out);
